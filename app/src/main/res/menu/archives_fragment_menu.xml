@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/gridOn"
+          android:title="Grid On"
+          android:icon="@drawable/ic_grid_on_black_24dp"
+          app:showAsAction="ifRoom"
+          android:orderInCategory="200"
+    />
+    <item android:id="@+id/searchAllNotes"
+          android:title="Search"
+          android:icon="@drawable/ic_search_black_24dp"
+          app:showAsAction="ifRoom"
+          app:actionViewClass="android.widget.SearchView"
+    />
+</menu>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/toolbar"
+            tools:background="@drawable/round_rect"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/note_title"
+              android:background="@android:color/transparent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/toolbar"
+              android:textSize="24sp"
+              android:textColor="@android:color/black"
+              android:fontFamily="@font/roboto_regular"
+              android:layout_marginTop="50dp"
+              android:layout_marginStart="20dp"
+              tools:text="Password"
+    />
+
+    <EditText android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/note_description"
+              android:background="@android:color/transparent"
+              app:layout_constraintStart_toStartOf="@id/note_title"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/note_title"
+              android:fontFamily="@font/roboto_regular"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="20dp"
+              android:textColor="@android:color/black"
+              tools:text="When going without air conditioning, you need to consider two factors: the overall heat and the humidity. On a hot day, sweating is a surprisingly effective method of returning your body to its core temperature. As the droplets on your skin transition from liquid to gas, their evaporation pulls warmth away from your body, cooling the blood underneath your skin, which goes back to your body\’s core, reducing your overall temperature. Moisture in the air, however, stalls this process. In meteorological terms, humidity is the amount of water vapor the atmosphere can hold. The more humid it is, the less space there is for your sweat to evaporate. And without your body\’s natural chilling system, everything feels hotter."
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
